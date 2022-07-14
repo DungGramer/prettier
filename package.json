@@ -1,0 +1,36 @@
+{
+  "name": "@dunggramer/prettier",
+  "description": "The shareable configuration for Prettier in your project",
+  "version": "1.0.0",
+  "main": "prettier.config.js",
+  "prettier": "./prettier.config.js",
+  "scripts": {
+    "format": "prettier --ignore-path='.gitignore' --list-different --write .",
+    "format:check": "prettier --ignore-path='.gitignore' --check ."
+  },
+  "author": {
+    "name": "DungGramer",
+    "email": "dung.dev.gramer@gmail.com",
+    "url": "https://dunggramer.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DungGramer/prettier/issues"
+  },
+  "homepage": "https://github.com/DungGramer/prettier#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DungGramer/prettier.git"
+  },
+  "keywords": [
+    "prettier",
+    "prettierconfig",
+    "prettier-config",
+    "standard",
+    "standard style",
+    "format code",
+    "formatting",
+    "formatting style",
+    "formatting rules"
+  ]
+}
