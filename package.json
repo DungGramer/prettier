@@ -37,7 +37,7 @@
     "format:check": "prettier --ignore-path='.gitignore' --check ."
   },
   "prettier": "./prettier.config.js",
-  "devDependencies": {
+  "dependencies": {
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
     "prettier": "^2.7.1",
     "prettier-plugin-jsdoc": "^0.4.2",
