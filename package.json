@@ -1,36 +1,47 @@
 {
   "name": "@dunggramer/prettier",
+  "version": "2.0.0",
   "description": "The shareable configuration for Prettier in your project",
-  "version": "1.0.0",
-  "main": "prettier.config.js",
-  "prettier": "./prettier.config.js",
-  "scripts": {
-    "format": "prettier --ignore-path='.gitignore' --list-different --write .",
-    "format:check": "prettier --ignore-path='.gitignore' --check ."
+  "keywords": [
+    "format code",
+    "format jsdoc",
+    "formatting rules",
+    "formatting style",
+    "formatting",
+    "jsdoc",
+    "prettier",
+    "prettier-config",
+    "prettierconfig",
+    "sort attributes",
+    "sort imports",
+    "standard style",
+    "standard"
+  ],
+  "homepage": "https://github.com/DungGramer/prettier#readme",
+  "bugs": {
+    "url": "https://github.com/DungGramer/prettier/issues"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DungGramer/prettier.git"
+  },
+  "license": "MIT",
   "author": {
     "name": "DungGramer",
     "email": "dung.dev.gramer@gmail.com",
     "url": "https://dunggramer.com"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DungGramer/prettier/issues"
+  "main": "prettier.config.js",
+  "scripts": {
+    "format": "prettier --ignore-path='.gitignore' --list-different --write .",
+    "format:check": "prettier --ignore-path='.gitignore' --check ."
   },
-  "homepage": "https://github.com/DungGramer/prettier#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DungGramer/prettier.git"
-  },
-  "keywords": [
-    "prettier",
-    "prettierconfig",
-    "prettier-config",
-    "standard",
-    "standard style",
-    "format code",
-    "formatting",
-    "formatting style",
-    "formatting rules"
-  ]
+  "prettier": "./prettier.config.js",
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-jsdoc": "^0.4.2",
+    "prettier-plugin-organize-attributes": "0.0.5",
+    "prettier-plugin-packagejson": "^2.2.18"
+  }
 }
