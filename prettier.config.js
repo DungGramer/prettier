@@ -21,9 +21,9 @@ module.exports = {
 
   // Plugins Config
   plugins: [
-    '@trivago/prettier-plugin-sort-imports',
-    'prettier-plugin-jsdoc',
-    'prettier-plugin-organize-attributes',
+    require.resolve('@trivago/prettier-plugin-sort-imports'),
+    require.resolve('prettier-plugin-jsdoc'),
+    require.resolve('prettier-plugin-organize-attributes'),
   ],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
