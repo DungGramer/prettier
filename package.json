@@ -1,6 +1,6 @@
 {
   "name": "@dunggramer/prettier",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "The shareable configuration for Prettier in your project",
   "keywords": [
     "format code",
