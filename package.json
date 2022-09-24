@@ -1,19 +1,15 @@
 {
   "name": "@dunggramer/prettier",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "The shareable configuration for Prettier in your project",
   "keywords": [
     "format code",
-    "format jsdoc",
     "formatting rules",
     "formatting style",
     "formatting",
-    "jsdoc",
     "prettier",
     "prettier-config",
     "prettierconfig",
-    "sort attributes",
-    "sort imports",
     "standard style",
     "standard"
   ],
@@ -36,12 +32,5 @@
     "format": "prettier --ignore-path='.gitignore' --list-different --write .",
     "format:check": "prettier --ignore-path='.gitignore' --check ."
   },
-  "prettier": "./prettier.config.js",
-  "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^3.3.0",
-    "prettier": "^2.7.1",
-    "prettier-plugin-jsdoc": "^0.4.2",
-    "prettier-plugin-organize-attributes": "0.0.5",
-    "prettier-plugin-packagejson": "^2.2.18"
-  }
+  "prettier": "./prettier.config.js"
 }

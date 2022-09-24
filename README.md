@@ -32,19 +32,10 @@
   <a href="#usage">Usage</a> •
   <a href="#extending">Extending</a> •
   <a href="#explanation">Explanation</a> • 
-  <a href="#prettier-properties">Prettier Properties</a> • 
-  <a href="#plugins-properties">Plugins Properties</a>
+  <a href="#prettier-properties">Prettier Properties</a>
 </p>
 
 <br>
-
-## Features
-
-- Global configuration, syncronize format with all team members and all projects
-- Simple and easy to use
-- Sorts the imports in your project
-- Sort attributes in Angular, Vue & HTML
-- Sort the package.json file
 
 ## Installation
 
@@ -65,7 +56,7 @@ To enable the rules, add a `prettier` property in your `package.json`. See the [
   "name": "my-projects-name",
   "prettier": "@dunggramer/prettier",
   "devDependencies": {
-    "@dunggramer/prettier": "^1.0.0"
+    "@dunggramer/prettier": "^2.2.0"
   }
 }
 ```
@@ -220,34 +211,3 @@ const user = {
 
 Indent lines with spaces instead of tabs. Using the space bar makes the layout more flexible.  
 `useTabs: false`
-
-## Plugins Properties
-
-### @trivago/prettier-plugin-sort-imports
-
-#### [importOrderSeparation](https://github.com/trivago/prettier-plugin-sort-imports#importorderseparation)
-
-Enable the new line separator between declarations groups.  
-`importOrderSeparation: true`
-
-#### [importOrderSortSpecifiers](https://github.com/trivago/prettier-plugin-sort-imports#importordersortspecifiers)
-
-Sorting of the specifiers in an import declarations.  
-`importOrderSortSpecifiers: true`
-
-#### [importOrderGroupNamespaceSpecifiers](https://github.com/trivago/prettier-plugin-sort-imports#importordergroupnamespacespecifiers)
-
-Sorting of the specified in an import declarations.  
-`importOrderGroupNamespaceSpecifiers: true`
-
-#### [importOrderCaseInsensitive](https://github.com/trivago/prettier-plugin-sort-imports#importordercaseinsensitive)
-
-Enable case-insensitivity in the sorting.  
-`importOrderCaseInsensitive: true`
-
-### prettier-plugin-jsdoc
-
-#### [tsdoc](https://github.com/hosseinmd/prettier-plugin-jsdoc#tsdoc)
-
-Support formatting tsdoc.  
-`tsdoc: true`

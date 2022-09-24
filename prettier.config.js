@@ -18,38 +18,23 @@ module.exports = {
   tabWidth: 2,
   trailingComma: 'es5',
   useTabs: false,
-
-  // Plugins Config
-  plugins: [
-    require.resolve('@trivago/prettier-plugin-sort-imports'),
-    require.resolve('prettier-plugin-jsdoc'),
-    require.resolve('prettier-plugin-organize-attributes'),
-  ],
-  importOrderSeparation: true,
-  importOrderSortSpecifiers: true,
-  importOrderGroupNamespaceSpecifiers: true,
-  importOrderCaseInsensitive: true,
-  tsdoc: true,
   overrides: [
     {
       files: '*.html',
       options: { printWidth: 120 },
     },
     {
-      files: ['*.template.html', '*.component.html'],
-      options: { parser: 'angular' },
-    },
-    {
-      files: '*.js',
-      options: { parser: 'flow' },
-    },
-    {
-      files: '*.ts',
-      options: { parser: 'typescript' },
-    },
-    {
       files: '*.json',
       options: { printWidth: Infinity },
+    },
+    {
+      files: '*.json5',
+      options: {
+        parser: 'json5',
+        quoteProps: 'preserve',
+        singleQuote: false,
+        trailingComma: 'none',
+      },
     },
     {
       files: ['*.md', '*.mdx'],
@@ -64,8 +49,18 @@ module.exports = {
       options: { vueIndentScriptAndStyle: true },
     },
     {
-      files: ['*.yml', '*.yaml'],
-      options: { tabWidth: 2 },
+      files: ['*.yml', '*.yaml', '*.toml'],
+      options: { tabWidth: 2, useTabs: false },
+    },
+    {
+      files: '*.sol',
+      options: {
+        printWidth: 100,
+        tabWidth: 4,
+        useTabs: false,
+        singleQuote: false,
+        bracketSpacing: true,
+      },
     },
     {
       files: ['.prettierrc', '.stylelintrc'],
@@ -80,10 +75,16 @@ module.exports = {
       options: { parser: 'markdown' },
     },
     {
+      files: ['.all-contributorsrc'],
+      options: {
+        parser: 'json-stringify',
+        singleQuote: false,
+      },
+    },
+    {
       files: ['package.json'],
       options: {
         parser: 'json-stringify',
-        plugins: ['prettier-plugin-packagejson'],
       },
     },
   ],
