@@ -1,6 +1,6 @@
 {
   "name": "@dunggramer/prettier",
-  "version": "2.2.0",
+  "version": "2.1.0-beta",
   "description": "The shareable configuration for Prettier in your project",
   "keywords": [
     "format code",
@@ -28,6 +28,10 @@
     "url": "https://dunggramer.com"
   },
   "main": "prettier.config.js",
+  "files": [
+    "angular/prettier.config.js",
+    "prettier.config.js"
+  ],
   "scripts": {
     "format": "prettier --ignore-path='.gitignore' --list-different --write .",
     "format:check": "prettier --ignore-path='.gitignore' --check ."

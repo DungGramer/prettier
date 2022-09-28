@@ -110,13 +110,6 @@ module.exports = {
 };
 ```
 
-Read more configuration options in plugins here:
-
-- [prettier-plugin-jsdoc](https://github.com/homer0/packages/tree/main/packages/public/prettier-plugin-jsdoc#readme)
-- [prettier-plugin-organize-imports](https://github.com/trivago/prettier-plugin-sort-imports#readme)
-- [prettier-plugin-organize-attributes](https://github.com/NiklasPor/prettier-plugin-organize-attributes#readme)
-- [prettier-plugin-packagejson](https://github.com/matzkoh/prettier-plugin-packagejson#readme)
-
 ## Prettier Properties
 
 #### arrowParens

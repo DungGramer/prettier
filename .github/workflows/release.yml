@@ -1,0 +1,34 @@
+---
+name: "Release"
+on:
+  push:
+    branches:
+      - "master"
+    tags:
+      - "v*"
+
+jobs:
+  tagged-release:
+    name: "Tagged Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          draft: true
+
+  changelog:
+    name: "Build Changelog"
+    id: "github_release"
+    runs-on: "ubuntu-latest"
+    needs: "tagged-release"
+
+    steps:
+      - uses: "mikepenz/release-changelog-builder-action@v1"
+      with:
+        token: "${{ secrets.GITHUB_TOKEN }}"
+        toTag: "HEAD"
+        failOnError: true
+        configuration: "".github/changelog-config/configuration.json"
