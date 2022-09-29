@@ -1,6 +1,6 @@
 'use strict';
 
-const { SPECIFIC_FILES } = require('./utils');
+const { SPECIFIC_FILES } = require('./constants');
 
 // @ts-check
 /**

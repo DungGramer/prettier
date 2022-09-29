@@ -1,4 +1,4 @@
-export const SPECIFIC_FILES = Object.freeze([
+const SPECIFIC_FILES = Object.freeze([
   {
     files: '*.json',
     options: { printWidth: Infinity },
@@ -40,3 +40,7 @@ export const SPECIFIC_FILES = Object.freeze([
     },
   },
 ]);
+
+module.exports = {
+  SPECIFIC_FILES,
+};
