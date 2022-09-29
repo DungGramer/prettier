@@ -31,6 +31,7 @@
   <a href="#installation">Installation</a> •
   <a href="#usage">Usage</a> •
   <a href="#extending">Extending</a> •
+  <a href="#template-literals">Template Literals</a> •
   <a href="#explanation">Explanation</a> • 
   <a href="#prettier-properties">Prettier Properties</a>
 </p>
@@ -109,6 +110,27 @@ module.exports = {
   semi: false,
 };
 ```
+
+## Template Literals
+
+If you want using template literals, you can use the following configuration:
+
+```javascript
+// .prettierrc
+'@dunggramer/prettier/angular/prettier.config';
+```
+
+| Language, Framework, Library | Template literals                                   |
+| ---------------------------- | --------------------------------------------------- |
+| Angular                      | `@dunggramer/prettier/angular/prettier.config`      |
+| React                        | `@dunggramer/prettier/react/prettier.config`        |
+| Vue                          | `@dunggramer/prettier/vue/prettier.config`          |
+| React Native                 | `@dunggramer/prettier/react-native/prettier.config` |
+
+| Extracted from repository | Template literals                                        |
+| ------------------------- | -------------------------------------------------------- |
+| Airbnb                    | `@dunggramer/prettier/airbnb/prettier.config`            |
+| typescript-eslint         | `@dunggramer/prettier/typescript-eslint/prettier.config` |
 
 ## Prettier Properties
 
