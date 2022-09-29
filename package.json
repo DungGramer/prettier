@@ -1,6 +1,6 @@
 {
   "name": "@dunggramer/prettier",
-  "version": "2.1.1-beta",
+  "version": "3.0.1",
   "description": "The shareable configuration for Prettier in your project",
   "keywords": [
     "format code",
@@ -29,13 +29,19 @@
   },
   "main": "prettier.config.js",
   "files": [
+    "airbnb/prettier.config.js",
     "angular/prettier.config.js",
+    "react-native/prettier.config.js",
+    "reactjs/prettier.config.js",
+    "typescript-eslint/prettier.config.js",
+    "vuejs/prettier.config.js",
     "prettier.config.js",
     "constants.js"
   ],
   "scripts": {
     "format": "prettier --ignore-path='.gitignore' --list-different --write .",
-    "format:check": "prettier --ignore-path='.gitignore' --check ."
+    "format:check": "prettier --ignore-path='.gitignore' --check .",
+    "prepublish": "npx npm-packlist"
   },
   "prettier": "./prettier.config.js"
 }
