@@ -52,12 +52,12 @@ pnpm i -D prettier @dunggramer/prettier
 
 To enable the rules, add a `prettier` property in your `package.json`. See the [Prettier configuration docs](https://prettier.io/docs/en/configuration.html) for more details.
 
-```json
+```diff
 {
   "name": "my-projects-name",
-  "prettier": "@dunggramer/prettier",
++ "prettier": "@dunggramer/prettier",
   "devDependencies": {
-    "@dunggramer/prettier": "^2.2.0"
+    "@dunggramer/prettier": "^4.0.0"
   }
 }
 ```
@@ -95,42 +95,26 @@ module.exports = {
 };
 ```
 
-```javascript
-// prettier.config.js
-module.exports = {
-  plugins: ['@dunggramer/prettier'],
-  semi: false,
-};
-```
-
-```javascript
-// prettier.config.js
-module.exports = {
-  plugins: [require('@dunggramer/prettier')],
-  semi: false,
-};
-```
-
 ## Template Literals
 
 If you want using template literals, you can use the following configuration:
 
 ```javascript
 // .prettierrc
-'@dunggramer/prettier/angular/prettier.config';
+'@dunggramer/prettier/react';
 ```
 
-| Language, Framework, Library | Template literals                                   |
-| ---------------------------- | --------------------------------------------------- |
-| Angular                      | `@dunggramer/prettier/angular/prettier.config`      |
-| React                        | `@dunggramer/prettier/react/prettier.config`        |
-| Vue                          | `@dunggramer/prettier/vue/prettier.config`          |
-| React Native                 | `@dunggramer/prettier/react-native/prettier.config` |
+| Language, Framework, Library | Template literals                   |
+| ---------------------------- | ----------------------------------- |
+| Angular                      | `@dunggramer/prettier/angular`      |
+| React                        | `@dunggramer/prettier/react`        |
+| Vue                          | `@dunggramer/prettier/vue`          |
+| React Native                 | `@dunggramer/prettier/react-native` |
 
-| Extracted from repository | Template literals                                        |
-| ------------------------- | -------------------------------------------------------- |
-| Airbnb                    | `@dunggramer/prettier/airbnb/prettier.config`            |
-| typescript-eslint         | `@dunggramer/prettier/typescript-eslint/prettier.config` |
+| Extracted from repository | Template literals                        |
+| ------------------------- | ---------------------------------------- |
+| Airbnb                    | `@dunggramer/prettier/airbnb`            |
+| typescript-eslint         | `@dunggramer/prettier/typescript-eslint` |
 
 ## Prettier Properties
 
