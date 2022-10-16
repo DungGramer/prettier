@@ -17,7 +17,6 @@
       alt="Package Version"
     />
   </a>
-
   <a href="https://www.npmjs.com/package/@dunggramer/prettier">
     <img
       src="https://img.badgesize.io/DungGramer/prettier/master/prettier.config.js.svg?label=File_size"
@@ -32,7 +31,6 @@
   <a href="#usage">Usage</a> •
   <a href="#extending">Extending</a> •
   <a href="#template-literals">Template Literals</a> •
-  <a href="#explanation">Explanation</a> • 
   <a href="#prettier-properties">Prettier Properties</a>
 </p>
 
