@@ -10,9 +10,9 @@ module.exports = {
   printWidth: 100,
   quoteProps: 'preserve',
   singleQuote: true,
-  tabs: false,
+  useTabs: false,
   tabWidth: 2,
-  semicolon: true,
+  semi: true,
   trailingComma: 'es5',
 
   overrides: [
